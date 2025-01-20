@@ -17,6 +17,7 @@ public enum ItemType
 {
     Seed,
     Commodity,
+    Hoeing_Tool,
     Watering_Can,
     Chopping_Tool,
     Breaking_Tool,

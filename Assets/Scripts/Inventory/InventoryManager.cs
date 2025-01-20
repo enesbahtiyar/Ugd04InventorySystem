@@ -13,6 +13,8 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>
 
     [SerializeField] private SO_ItemList itemList;
 
+    private int[] selectedInventoryItem;
+
     protected override void Awake()
     {
         base.Awake();
@@ -20,6 +22,13 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>
         CreateInventoryLists();
 
         CreateItemDetailsDictionary();
+
+        selectedInventoryItem = new int[(int)InventoryLocation.count];
+
+        for(int i = 0; i <  selectedInventoryItem.Length; i++)
+        {
+            selectedInventoryItem[i] = -1;
+        }
     }
 
     private void CreateInventoryLists()
@@ -172,5 +181,47 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>
 
             EventHandler.CallInventoryUpdatedEvent(inventoryLocation, inventoryLists[(int)inventoryLocation]);
         }
+    }
+
+    public string GetItemTypeDescription(ItemType itemType)
+    {
+        string itemTypeDescription;
+        switch(itemType)
+        {
+            case ItemType.Breaking_Tool:
+                itemTypeDescription = Settings.BreakingTool;
+                break;
+            case ItemType.Collecting_Tool:
+                itemTypeDescription = Settings.CollectingTool;
+                break;
+            case ItemType.Chopping_Tool:
+                itemTypeDescription = Settings.ChoppingTool;
+                break;
+            case ItemType.Watering_Can:
+                itemTypeDescription = Settings.WateringTool;
+                break;
+            case ItemType.Reaping_Tool:
+                itemTypeDescription = Settings.ReapingTool;
+                break;
+            case ItemType.Hoeing_Tool:
+                itemTypeDescription = Settings.HoeingTool;
+                break;
+            default:
+                itemTypeDescription = itemType.ToString();
+                break;
+        }
+
+        return itemTypeDescription;
+    }
+
+
+    public void SetSelectedInventoryItem(InventoryLocation inventoryLocation, int itemCode)
+    {
+        selectedInventoryItem[(int)inventoryLocation] = itemCode;
+    }
+
+    public void ClearSelectedInventoryItem(InventoryLocation inventoryLocation)
+    {
+        selectedInventoryItem[(int)inventoryLocation] = -1;
     }
 }

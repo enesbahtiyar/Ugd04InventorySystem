@@ -633,6 +633,7 @@ MonoBehaviour:
   - {fileID: 407143813}
   inventoryBarDraggedItem: {fileID: 7769023404516096872, guid: fb8090810612ff14e83f57059ed9b58b,
     type: 3}
+  inventoryTextBoxGameobject: {fileID: 0}
 --- !u!1001 &313173115
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2590,6 +2591,26 @@ PrefabInstance:
       propertyPath: inventoryBar
       value: 
       objectReference: {fileID: 280520890}
+    - target: {fileID: 5113282599789658682, guid: 1f6c9c3fdf16b174598ed7d7f32a71da,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5113282599789658682, guid: 1f6c9c3fdf16b174598ed7d7f32a71da,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5113282599789658682, guid: 1f6c9c3fdf16b174598ed7d7f32a71da,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5113282599789658682, guid: 1f6c9c3fdf16b174598ed7d7f32a71da,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6039453437979871205, guid: 1f6c9c3fdf16b174598ed7d7f32a71da,
         type: 3}
       propertyPath: m_Pivot.x

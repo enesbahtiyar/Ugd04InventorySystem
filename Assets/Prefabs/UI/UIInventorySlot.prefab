@@ -333,3 +333,6 @@ MonoBehaviour:
     canBeEaten: 0
     canBeCarried: 0
   itemQuantity: 0
+  slotNumber: 0
+  inventoryTextBoxPrefab: {fileID: 8373872686140812799, guid: f46a5c354102fed4ebfafefc52e19a9c,
+    type: 3}
