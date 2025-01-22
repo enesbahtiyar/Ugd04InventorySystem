@@ -93,7 +93,6 @@ public class UiInventoryBar : MonoBehaviour
     {
         Vector3 playerViewPortPosition = Player.Instance.GetPlayerViewPortPosition();
 
-        Debug.Log(playerViewPortPosition);
         if(playerViewPortPosition.y > 0.3f && isInventoryBarPositionBottom == false)
         {
             rectTransform.pivot = new Vector2(0.5f, 0);

@@ -49,7 +49,18 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>
     {
         AddItem(inventoryLocation, item);
 
+        EventHandler.CallItemAddedEvent(item.ItemCode);
+
         Destroy(gameObjectToDelete);
+    }
+
+    public void AddItem(InventoryLocation inventoryLocation, int itemCode)
+    {
+        Item item = new Item();
+        item.ItemCode = itemCode;
+        AddItem(inventoryLocation, item);
+
+        EventHandler.CallItemAddedEvent(itemCode);
     }
 
 

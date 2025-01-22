@@ -44,4 +44,54 @@ public static class EventHandler
             InventoryUpdatedEvent(inventoryLocation, inventoryList);
         }
     }
+
+    public static event Action<int> ItemAdded;
+
+    public static void CallItemAddedEvent(int itemCode)
+    {
+        if(ItemAdded != null)
+        {
+            ItemAdded(itemCode);
+        }
+    }
+
+    public static event Action<string> OnStartQuest;
+
+    public static void CallOnStartQuest(string id)
+    {
+        if(OnStartQuest != null)
+        {
+            OnStartQuest(id);
+        }
+    }
+
+    public static event Action<string> OnAdvanceQuest;
+
+    public static void CallOnAdvanceQuest(string id)
+    {
+        if (OnAdvanceQuest != null)
+        {
+            OnAdvanceQuest(id);
+        }
+    }
+
+    public static event Action<string> OnFinishQuest;
+
+    public static void CallOnFinishQuest(string id)
+    {
+        if (OnFinishQuest != null)
+        {
+            OnFinishQuest(id);
+        }
+    }
+
+    public static event Action<Quest> OnQuestStateChanged;
+
+    public static void CallOnQuestStateQuestChanged(Quest quest)
+    {
+        if (OnQuestStateChanged != null)
+        {
+            OnQuestStateChanged(quest);
+        }
+    }
 }

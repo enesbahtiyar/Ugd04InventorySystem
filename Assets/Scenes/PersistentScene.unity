@@ -166,8 +166,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66c1ccbe0d8212248ad5b28c2ce3c329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 0}
-  soAnimationTypeArray: []
+  character: {fileID: 2188209232332271841}
+  soAnimationTypeArray:
+  - {fileID: 11400000, guid: f0c8ba41f64e4d24aa550d0afd8ebf02, type: 2}
+  - {fileID: 11400000, guid: e80580e1cbca2784987969172915ef20, type: 2}
+  - {fileID: 11400000, guid: a1dae93418cc1d246b1bceb8b0d4c34b, type: 2}
+  - {fileID: 11400000, guid: 34237b041a3c682499c93ae8fee238d8, type: 2}
+  - {fileID: 11400000, guid: 7876b95c51ade3040a5d38d48291350d, type: 2}
+  - {fileID: 11400000, guid: 7e6a081c98c54e94f8228934716e8092, type: 2}
+  - {fileID: 11400000, guid: 807c913ef78b0dc469940f7b54ec8c2c, type: 2}
+  - {fileID: 11400000, guid: 3c7ff8628b83eb24796bf91fdae4dd6f, type: 2}
+  - {fileID: 11400000, guid: e03640f04b98ac9408d6c13e6a416482, type: 2}
+  - {fileID: 11400000, guid: 77c598d20f9f3eb4690a17bab1d438db, type: 2}
+  - {fileID: 11400000, guid: eca0c5379c9459a49bc549f286be5d06, type: 2}
+  - {fileID: 11400000, guid: 5b139d82275014a448ea4963525039ee, type: 2}
+  - {fileID: 11400000, guid: 2fd98cd0bc1222e40ac1a6f1d04fa072, type: 2}
+  - {fileID: 11400000, guid: 2321593100d5c0c4c8e0ca3537b8d404, type: 2}
+  - {fileID: 11400000, guid: 7fda6d01f53442e47a2134d035a36144, type: 2}
+  - {fileID: 11400000, guid: 9990695846a1a5d41afd2699932dd61f, type: 2}
+  - {fileID: 11400000, guid: 0e7934fefaa9b56498f7044a77f10185, type: 2}
+  - {fileID: 11400000, guid: 3c17fb5b3c358ea4881fffc237ae7651, type: 2}
+  - {fileID: 11400000, guid: 9070de1a1096b3f40a73d6ecf7a8c648, type: 2}
+  - {fileID: 11400000, guid: 12424665bfff521438dca4c00ff5b193, type: 2}
+  - {fileID: 11400000, guid: 7d6e2f5b297c65c47bb65ea0bd0bfd63, type: 2}
+  - {fileID: 11400000, guid: 7e3ef67d6c31cfc4caf1263ebca66151, type: 2}
+  - {fileID: 11400000, guid: 215ea35fecf70ff4caa8499096aac49b, type: 2}
+  - {fileID: 11400000, guid: fa0b7edd814604b4fb47547882582272, type: 2}
 --- !u!1001 &148007552
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1674,6 +1698,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &904319846
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 904319848}
+  - component: {fileID: 904319847}
+  m_Layer: 0
+  m_Name: QuestManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &904319847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 904319846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55dfeac129a71764fbb563d02f9d88c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &904319848
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 904319846}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &927376937
 GameObject:
   m_ObjectHideFlags: 0
@@ -2872,7 +2940,7 @@ Transform:
   m_GameObject: {fileID: 911684415189269176}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.02, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3297,7 +3365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce8aa14e2e5feb24f98ccec04d326eef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  equippedItemSpriteRenderer: {fileID: 0}
+  equippedItemSpriteRenderer: {fileID: 6110952362931578475}
 --- !u!114 &3498977573899059900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3781,3 +3849,4 @@ SceneRoots:
   - {fileID: 859032562}
   - {fileID: 2001693989}
   - {fileID: 1610190465}
+  - {fileID: 904319848}
